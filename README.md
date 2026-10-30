@@ -1,4 +1,4 @@
-# Anurag — Multilingual Developer Portfolio
+# Xtreme — Multilingual Developer Portfolio
 
 A responsive static portfolio built with **HTML, CSS and vanilla JavaScript**. It includes animated visuals, project cards, a language selector (English, Hindi and Hinglish), and live public GitHub repository/language information.
 
