@@ -1,27 +1,18 @@
-# Anurag — Full Stack Developer Portfolio
+# Anurag — Multilingual Developer Portfolio
 
-Animated, responsive static portfolio. It works on both **Vercel** and **GitHub Pages** without a build step or server runtime.
+A responsive static portfolio built with **HTML, CSS and vanilla JavaScript**. It includes animated visuals, project cards, a language selector (English, Hindi and Hinglish), and live public GitHub repository/language information.
+
+## Hosting on Vercel
+1. Push the contents of this folder to a GitHub repository.
+2. Import that repository into Vercel.
+3. Choose **Other** as the framework preset if asked.
+4. Leave **Build Command** and **Output Directory** empty/default (the site is static and `index.html` is at the root).
+5. Deploy.
+
+No Node.js build, npm install, API key, or environment variables are required. `vercel.json` is included for simple static hosting. The GitHub public API can rate-limit anonymous requests; if it does, the page shows an unavailable message rather than made-up statistics.
 
 ## Files
-- `index.html` — page structure and metadata
-- `style.css` — design, responsive layout and animations
-- `script.js` — portfolio content and interactions
-- `assets/profile-photo.jpg` — profile photo
-- `assets/battlexa-esports-logo.png` — Battlexa Esports Arena logo
-- `.nojekyll` — disables GitHub Pages Jekyll processing
-- `vercel.json` — static deployment configuration
-
-## Deploy to GitHub Pages
-1. Upload the **contents** of this folder to the root of your GitHub repository (so `index.html` is at the repository root).
-2. Commit and push.
-3. Open **Settings → Pages** and select **Deploy from a branch**, branch `main`, folder `/ (root)`.
-4. Save and wait for the Pages deployment to finish.
-
-## Deploy to Vercel
-1. Import the GitHub repository into Vercel.
-2. Choose **Other** as the framework preset.
-3. Leave Build Command and Output Directory empty/default; this is a static site.
-4. Deploy. `index.html` is served from the project root.
-
-## Edit personal links
-Edit `portfolioConfig` near the top of `script.js`. Replace placeholder email/social URLs with your real details. GitHub contribution and language cards currently use illustrative demo data and are not live GitHub analytics.
+- `index.html` — page content
+- `style.css` — layout, responsive styles and animations
+- `script.js` — language selector, interactions, project cards and GitHub API calls
+- `assets/` — profile and project logos

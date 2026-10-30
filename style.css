@@ -4,5 +4,88 @@
 @media(max-width:650px){.github-showcase{padding-top:25px}.github-card{border-radius:19px;padding:20px 16px}.github-card-head{align-items:flex-start;flex-direction:column;margin-bottom:20px}.heatmap{gap:2px;min-height:74px;grid-auto-columns:minmax(2px,1fr)}.heatmap-months{font-size:8px}.heat-cell{border-radius:1px}.year-controls{gap:6px;flex-wrap:wrap}.year-btn{padding:9px 12px}.year-note{width:100%;margin:7px 0 0}.language-list{gap:14px 12px}.language-name{font-size:12px}.language-percent{font-size:10px}.featured-head{margin-top:45px}.featured-head h3{font-size:18px}.featured-head>span{font-size:8px}.repo-grid{grid-template-columns:1fr}.repo-card p{min-height:0}}
 @media(prefers-reduced-motion:reduce){.heat-cell,.repo-card,.year-btn{transition:none}}
 
-/* Battlexa Esports Arena feature */
-.esports-card{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(24px,5vw,64px);align-items:center;padding:clamp(20px,4vw,46px);border:1px solid rgba(151,92,255,.28);border-radius:24px;background:radial-gradient(circle at 10% 20%,rgba(122,54,255,.18),transparent 38%),linear-gradient(135deg,#0d0a14,#08080d 70%);overflow:hidden;position:relative;box-shadow:0 24px 80px rgba(69,26,150,.12)}.esports-art{min-width:0;border-radius:18px;overflow:hidden;background:#030305;border:1px solid rgba(255,255,255,.09);box-shadow:0 0 60px rgba(126,43,255,.14)}.esports-art img{display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:contain}.esports-badge{display:inline-flex;align-items:center;gap:9px;font:600 10px 'Space Grotesk';letter-spacing:2px;color:#d7c6ff;border:1px solid rgba(157,105,255,.3);background:rgba(111,57,214,.12);padding:10px 13px;border-radius:99px}.esports-dot{width:7px;height:7px;border-radius:50%;background:#a36bff;box-shadow:0 0 12px #a36bff}.esports-info h3{font:700 clamp(28px,4vw,48px)/1.08 'Space Grotesk';letter-spacing:-1.5px;margin:24px 0 8px}.esports-info h3 em{font-style:normal;color:#a56cff}.esports-tagline{font:600 10px monospace;letter-spacing:3px;color:#d5c3ff}.esports-desc{color:#aaa;font-size:14px;line-height:1.8;max-width:590px}.esports-meta{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:26px 0}.esports-meta div{padding:14px 12px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.025)}.esports-meta span{display:block;font:9px monospace;letter-spacing:1px;color:#777;margin-bottom:8px}.esports-meta strong{font-size:12px;line-height:1.5;color:#eee}.esports-info .btn{margin-top:4px}.esports .section-head h2 i{background:linear-gradient(100deg,#f5f5f7,#a66aff);-webkit-background-clip:text;color:transparent}@media(max-width:850px){.esports-card{grid-template-columns:1fr}.esports-art{max-width:520px;margin:auto}.esports-info h3{font-size:clamp(30px,8vw,44px)}}@media(max-width:480px){.esports-meta{grid-template-columns:1fr}.esports-meta div{display:flex;align-items:center;justify-content:space-between;gap:12px}.esports-meta span{margin:0}.esports-meta strong{text-align:right}}
+
+/* Honest live GitHub summary */
+.live-github-summary{display:flex;flex-direction:column;align-items:flex-start;gap:18px;padding:30px 0 12px;color:#9aa4b5}.live-github-summary p{margin:0;line-height:1.7}.live-github-summary .btn{display:inline-flex;align-items:center;gap:8px}.data-note{line-height:1.6}
+
+/* Project and bot identity refinements */
+.project-logo{width:58px;height:58px;object-fit:contain;border-radius:13px;background:#050609;border:1px solid rgba(255,255,255,.08);padding:5px;margin:12px 0 10px}.project h3{margin-top:8px}.project-links{display:flex;gap:14px;flex-wrap:wrap;margin-top:20px}.project-links a{color:#91b7ff;text-decoration:none;font:600 12px 'Space Grotesk';transition:color .2s}.project-links a:hover{color:#fff}.skill-stack{margin-top:15px!important;color:#aaa!important}.bot-brand{display:flex;align-items:center;gap:13px;margin:16px 0 10px}.bot-brand .bot-logo{width:58px;height:58px;object-fit:contain;border-radius:14px;margin:0;padding:3px;background:#050609;border:1px solid rgba(255,255,255,.1)}.bot-brand h3{margin:0!important;font:600 21px 'Space Grotesk'}.bot .num{letter-spacing:1.3px}.repo-title h4{display:flex;align-items:center;gap:9px}.repo-title-mark{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:7px;background:#151c2b;color:#8dbbff;font-size:14px}
+
+
+/* Ambient motion polish inspired by modern developer portfolios */
+#particle-canvas{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;opacity:.72}
+body>nav,body>main,body>footer{position:relative;z-index:1}
+.scroll-progress{position:fixed;z-index:60;top:0;left:0;width:100%;height:2px;transform:scaleX(0);transform-origin:left;background:linear-gradient(90deg,#4d8dff,#65c9ff,#a58aff);box-shadow:0 0 14px #4d8dff80;pointer-events:none}
+.hero-copy .eyebrow{animation:riseIn .8s both}.hero-copy h1{animation:riseIn .85s .08s both}.hero-copy>p{animation:riseIn .85s .16s both}.hero-copy .actions{animation:riseIn .85s .24s both}.hero-copy .stack{animation:riseIn .85s .32s both}
+.profile-card{animation:cardFloat 7s ease-in-out infinite;transform-style:preserve-3d}.profile-card img{transition:filter .5s,opacity .5s}.profile-card:hover img{filter:grayscale(.25);opacity:1}
+.project,.skill,.bot,.repo-card,.stat{position:relative;isolation:isolate;overflow:hidden}.project::before,.skill::before,.bot::before,.repo-card::before,.stat::before{content:"";position:absolute;inset:0;z-index:-1;opacity:0;background:radial-gradient(320px circle at var(--mx,50%) var(--my,50%),rgba(91,151,255,.13),transparent 65%);transition:opacity .35s;pointer-events:none}.project:hover::before,.skill:hover::before,.bot:hover::before,.repo-card:hover::before,.stat:hover::before{opacity:1}
+.project,.skill,.bot{transition:transform .35s ease,border-color .35s ease,box-shadow .35s ease}.project:hover,.skill:hover,.bot:hover{transform:translateY(-7px);border-color:rgba(101,177,255,.38);box-shadow:0 22px 55px rgba(0,0,0,.28)}
+.btn.primary{background-size:180% 180%;background-position:0% 50%;transition:transform .3s,box-shadow .3s,background-position .6s}.btn.primary:hover{background-position:100% 50%;box-shadow:0 12px 38px rgba(77,141,255,.3)}
+.section-head h2{text-wrap:balance}.section-head h2 i{background-size:200% auto;animation:gradientDrift 7s linear infinite}
+@keyframes riseIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+@keyframes cardFloat{0%,100%{translate:0 0}50%{translate:0 -9px}}
+@keyframes gradientDrift{to{background-position:200% center}}
+@media(max-width:650px){#particle-canvas{opacity:.38}.profile-card{animation:none}.project:hover,.skill:hover,.bot:hover{transform:translateY(-3px)}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}#particle-canvas{display:none}.reveal{opacity:1;transform:none}}
+
+/* Animated role headline and profile avatar polish */
+.typed-role-wrap{display:inline-flex;align-items:center;min-height:1.05em;max-width:100%;color:#fff}
+.typed-role{display:inline-block;max-width:100%;font-size:clamp(32px,5.2vw,72px);line-height:1.05;letter-spacing:-.045em;background:linear-gradient(100deg,var(--b),var(--a),#fff,var(--b));background-size:220% auto;-webkit-background-clip:text;background-clip:text;color:transparent;animation:gradientDrift 6s linear infinite;overflow-wrap:anywhere}
+.type-caret{font-weight:400;color:var(--b);margin-left:5px;animation:blink .8s steps(2,start) infinite}
+.hero-metrics{display:flex;gap:12px;margin-top:26px;flex-wrap:wrap}
+.hero-metrics>div{min-width:125px;padding:12px 16px;border:1px solid rgba(110,170,255,.2);border-radius:12px;background:linear-gradient(145deg,rgba(70,115,255,.09),rgba(255,255,255,.015));display:flex;flex-direction:column;gap:3px;animation:riseIn .8s both}
+.hero-metrics>div:nth-child(2){animation-delay:.15s}
+.hero-metrics strong{font:700 23px 'Space Grotesk';color:#fff}
+.hero-metrics span{font:10px monospace;letter-spacing:1.4px;text-transform:uppercase;color:#8994a8}
+.profile-card{height:370px;display:flex;flex-direction:column;justify-content:space-between}
+.profile-avatar-ring{width:226px;height:226px;border-radius:50%;padding:5px;margin:16px auto 10px;background:conic-gradient(from 0deg,var(--b),var(--a),#fff,var(--b));box-shadow:0 0 34px rgba(63,148,255,.2);animation:avatarGlow 5s ease-in-out infinite}
+.profile-card .profile-avatar-ring img{display:block;width:100%;height:100%;border-radius:50%;object-fit:cover;object-position:center;filter:grayscale(1);opacity:.96;border:4px solid #0b0b10}
+.profile-bottom{padding-top:10px}
+@keyframes avatarGlow{0%,100%{box-shadow:0 0 25px rgba(63,148,255,.16);transform:rotate(0deg)}50%{box-shadow:0 0 42px rgba(63,148,255,.35);transform:rotate(2deg)}}
+@media(max-width:850px){.profile-card{height:350px}.profile-avatar-ring{width:205px;height:205px}}
+@media(max-width:480px){.profile-card{height:325px}.profile-avatar-ring{width:185px;height:185px}.typed-role{font-size:clamp(29px,8.5vw,42px);letter-spacing:-.035em}.hero-metrics>div{min-width:112px;padding:11px 13px}}
+.hero h1 .typed-role{color:transparent}
+
+/* Featured repository: keep the portfolio focused on the one published project. */
+.repo-grid{grid-template-columns:minmax(0,1fr)}
+.green-repo-card{padding:clamp(24px,4vw,38px);border-color:rgba(87,211,145,.24);background:radial-gradient(600px circle at 100% 0%,rgba(45,190,120,.09),transparent 55%),linear-gradient(145deg,#0d1513,#080a0d)}
+.green-repo-card:hover{border-color:rgba(87,211,145,.55);box-shadow:0 24px 65px rgba(14,130,79,.13)}
+.green-repo-card .repo-title h4{font-size:clamp(21px,3vw,28px)}
+.green-repo-icon{display:inline-grid;place-items:center;width:38px;height:38px;border-radius:12px;color:#83f0ad;background:rgba(61,204,125,.12);border:1px solid rgba(87,211,145,.2);font-size:21px}
+.green-repo-card p{max-width:760px;font-size:14px;min-height:0;margin:20px 0}
+.green-repo-card .repo-meta{margin:18px 0}
+.green-repo-card .repo-lang i{background:#3178c6}
+.repo-actions{display:flex;flex-wrap:wrap;gap:11px;margin-top:25px}
+.repo-actions .btn{font-size:12px}
+@media(max-width:500px){.repo-actions{flex-direction:column}.repo-actions .btn{width:100%;justify-content:center}}
+
+/* Extra motion polish: aurora ambience, staggered cards, glow sweeps and lively interactions. */
+body::before{content:"";position:fixed;inset:-20%;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 15% 20%,rgba(38,125,255,.12),transparent 34%),radial-gradient(ellipse at 82% 38%,rgba(124,92,255,.11),transparent 32%),radial-gradient(ellipse at 55% 88%,rgba(32,217,255,.07),transparent 35%);filter:blur(18px);background-size:140% 140%;animation:auroraDrift 18s ease-in-out infinite alternate}
+@keyframes auroraDrift{0%{transform:translate3d(-2%,0,0) scale(1);background-position:0% 30%,100% 20%,50% 100%}50%{transform:translate3d(2%,-1%,0) scale(1.04);background-position:25% 60%,75% 40%,30% 70%}100%{transform:translate3d(-1%,2%,0) scale(1.08);background-position:60% 10%,20% 80%,80% 30%}}
+.skill,.project,.bot,.repo-card,.stat{isolation:isolate;will-change:transform,border-color;transition:transform .38s cubic-bezier(.2,.8,.2,1),border-color .35s,box-shadow .35s}
+.skill::after,.project::after,.bot::after,.repo-card::after{content:"";position:absolute;inset:0;pointer-events:none;border-radius:inherit;background:linear-gradient(115deg,transparent 15%,rgba(255,255,255,.055) 45%,transparent 70%);transform:translateX(-130%);transition:transform .8s ease;z-index:0}
+.skill:hover::after,.project:hover::after,.bot:hover::after,.repo-card:hover::after{transform:translateX(130%)}
+.skill .icon{display:inline-block;transform-origin:center;animation:iconBreathe 3.8s ease-in-out infinite}
+.skill:nth-child(2) .icon{animation-delay:.4s}.skill:nth-child(3) .icon{animation-delay:.8s}.skill:nth-child(4) .icon{animation-delay:1.2s}
+@keyframes iconBreathe{0%,100%{transform:translateY(0) rotate(0) scale(1);filter:drop-shadow(0 0 0 rgba(32,217,255,0))}50%{transform:translateY(-5px) rotate(-4deg) scale(1.07);filter:drop-shadow(0 0 9px rgba(32,217,255,.25))}}
+.section-head h2{animation:headingSettle .85s both;animation-timing-function:cubic-bezier(.16,1,.3,1)}
+@keyframes headingSettle{from{opacity:0;transform:translateY(18px);filter:blur(5px)}to{opacity:1;transform:translateY(0);filter:blur(0)}}
+.section-head>span{transition:letter-spacing .4s,color .4s}.section-head:hover>span{letter-spacing:3px;color:var(--b)}
+.btn{position:relative;overflow:hidden;isolation:isolate}.btn::before{content:"";position:absolute;inset:-1px;background:linear-gradient(110deg,transparent 25%,rgba(255,255,255,.19),transparent 70%);transform:translateX(-130%);transition:transform .65s ease;z-index:-1}.btn:hover::before{transform:translateX(130%)}
+.hero-metrics>div{transition:transform .3s,border-color .3s,box-shadow .3s}.hero-metrics>div:hover{transform:translateY(-5px) scale(1.025);border-color:rgba(101,201,255,.48);box-shadow:0 10px 34px rgba(45,125,255,.12)}
+.profile-card{animation:profileHover 7s ease-in-out infinite;transform-style:preserve-3d}.profile-card .profile-avatar-ring{position:relative}.profile-avatar-ring::after{content:"";position:absolute;inset:-8px;border:1px dashed rgba(101,201,255,.3);border-radius:50%;animation:avatarOrbit 22s linear infinite;pointer-events:none}
+@keyframes profileHover{0%,100%{translate:0 0}50%{translate:0 -8px}}
+@keyframes avatarOrbit{to{transform:rotate(360deg)}}
+.code-float{animation:codeFloat 5s ease-in-out infinite;transition:border-color .3s,box-shadow .3s}.code-float:hover{border-color:rgba(101,201,255,.4);box-shadow:0 18px 60px rgba(32,130,255,.15)}
+@keyframes codeFloat{0%,100%{translate:0 0}50%{translate:0 -7px}}
+.scroll-progress{height:3px!important;transform-origin:left center;background:linear-gradient(90deg,var(--a),var(--b),#8dffc4);box-shadow:0 0 15px rgba(32,217,255,.45);z-index:100!important}
+.cursor-ring.cursor-hover{width:45px!important;height:45px!important;border-color:rgba(101,201,255,.9)!important;background:rgba(101,201,255,.07)}
+@media(max-width:650px){body::before{opacity:.7}.skill .icon{animation:none}.profile-card{animation:none}.profile-avatar-ring::after{animation-duration:35s}}
+@media(prefers-reduced-motion:reduce){body::before{animation:none}.skill .icon,.profile-card,.code-float,.profile-avatar-ring::after{animation:none!important}.skill::after,.project::after,.bot::after,.repo-card::after{display:none}}
+@media(max-width:800px){}
+
+/* Instagram-style circular profile picture */
+.profile-avatar-ring{width:248px;height:248px;aspect-ratio:1/1;border-radius:50%;padding:6px;overflow:visible;background:conic-gradient(from 0deg,#20d9ff,#7c5cff,#ff4fd8,#20d9ff);box-shadow:0 0 0 3px rgba(255,255,255,.08),0 0 38px rgba(32,217,255,.28);}
+.profile-card .profile-avatar-ring img{width:100%;height:100%;aspect-ratio:1/1;display:block;border-radius:50%!important;object-fit:cover;object-position:center 35%;overflow:hidden;border:5px solid #0b0b10;}
+@media(max-width:850px){.profile-avatar-ring{width:220px;height:220px}}
+@media(max-width:480px){.profile-avatar-ring{width:195px;height:195px}}
