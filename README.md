@@ -132,6 +132,7 @@ All personal info and links are isolated in the `src/data/` folder for quick upd
 ## 👑 Credits & Attribution
 
 This project is created and maintained by:
+original Dev - Mohsin & Codex Development team
 
 - **Lead Developer**: **XtremeZod** ([@bxaxtreme](https://github.com/bxaxtreme))
 - **Development Team**: **Flame Headquarters**
